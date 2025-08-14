@@ -22,6 +22,7 @@ O objetivo é mostrar **não apenas o resultado**, mas **o processo de aprendiza
 
 1. [Aula 01 – Introdução ao Python](#aula-01---introdução-ao-python)
 2. [Aula 02 – Manipulação de Strings](#aula-02---manipulação-de-strings)
+3. [Aula 03 – Operadores em Python](#aula-03---operadores-em-python)
 
 ### Projetos
 
@@ -149,3 +150,111 @@ print(f"Meu nome é {nome_completo} e tenho {idade} anos.")
 
 ---
 
+# 📚 Aula 03 – Operadores em Python
+
+**Data:** *14/08/2025*
+
+### 🧠 Objetivo
+
+Aprender a **trabalhar com operadores em Python**, entendendo como realizar **operações matemáticas**, **comparações**, **atribuições**, **operações lógicas** e **verificações de identidade e associação**. Aplicar esses conceitos em **exemplos práticos**.
+
+### ⚡ Conceitos Principais
+
+1. **Operadores Aritméticos** → realizam cálculos matemáticos.
+
+   * `+` → adição
+   * `-` → subtração
+   * `*` → multiplicação
+   * `/` → divisão (float)
+   * `//` → divisão inteira (int)
+   * `%` → resto da divisão
+   * `**` → exponenciação (potência)
+
+2. **Operadores de Comparação** → comparam valores e retornam `True` ou `False`.
+
+   * `==` → igual
+   * `!=` → diferente
+   * `>` → maior que
+   * `<` → menor que
+   * `>=` → maior ou igual
+   * `<=` → menor ou igual
+
+3. **Operadores Lógicos** → combinam expressões booleanas.
+
+   * `and` → verdadeiro se ambos forem True
+   * `or` → verdadeiro se pelo menos um for True
+   * `not` → inverte o valor booleano
+
+4. **Operadores de Atribuição** → modificam valores de variáveis.
+
+   * `=` → atribuição simples
+   * `+=` → soma e atribui
+   * `-=` → subtração e atribui
+   * `*=` → multiplicação e atribui
+   * `/=` → divisão e atribui
+
+5. **Operadores de Identidade** → verificam se duas variáveis apontam para o **mesmo objeto** na memória.
+
+   * `is` → é o mesmo objeto
+   * `is not` → não é o mesmo objeto
+
+6. **Operadores de Associação** → verificam se um valor está **presente em uma sequência** (listas, tuplas, strings).
+
+   * `in` → está presente
+   * `not in` → não está presente
+
+---
+
+### 💡 Exemplos Práticos
+
+```python
+# Operadores Aritméticos
+a, b = 10, 3
+print(a + b, a - b, a * b, a / b, a // b, a % b, a ** b)
+
+# Operadores de Comparação
+x, y = 5, 8
+print(x == y, x != y, x > y, x < y, x >= y, x <= y)
+
+# Operadores Lógicos
+p, q = True, False
+print(p and q, p or q, not p)
+
+# Operadores de Atribuição
+num = 10
+num += 5
+num *= 2
+num /= 4
+print(num)
+
+# Operadores de Identidade
+list1 = [1,2,3]; list2 = list1; list3 = [1,2,3]
+print(list1 is list2, list1 is list3, list1 is not list3)
+
+# Operadores de Associação
+frutas = ["maçã","banana","laranja"]
+print("banana" in frutas, "uva" in frutas, "uva" not in frutas)
+
+# Exercício Prático
+num1 = float(input("Digite o primeiro número: "))
+num2 = float(input("Digite o segundo número: "))
+print("Soma:", num1 + num2)
+print("Subtração:", num1 - num2)
+print("Multiplicação:", num1 * num2)
+print("Divisão inteira:", num1 // num2 if num2 != 0 else "Indefinido")
+print("Divisão:", num1 / num2 if num2 != 0 else "Indefinido")
+print("num1 > num2?", num1 > num2)
+print("num1 < num2?", num1 < num2)
+print("num1 == num2?", num1 == num2)
+print("(num1 > 0) and (num2 > 0):", (num1 > 0) and (num2 > 0))
+```
+
+---
+
+### 🧵 Resumo da Aula
+
+* Operadores permitem **manipular números e variáveis**, realizar **comparações**, combinar **expressões booleanas** e atualizar valores de forma prática.
+* **Operadores de identidade e associação** ajudam a verificar **objetos em memória** ou **elementos em sequências**.
+* Aplicar operadores em **exercícios práticos** ajuda a fixar a lógica e entender **como Python avalia expressões**.
+
+---
