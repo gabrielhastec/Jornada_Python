@@ -15,10 +15,6 @@ print("Idade:", idade)
 print("Altura:", altura)
 print("Está estudando?", estudando)
 
-# Separador visual: cria uma linha de traços para organizar a saída no terminal
-print("-" * 30)  # imprime 30 traços consecutivos
-# Isso ajuda a separar blocos de informações na tela e deixa a leitura mais clara
-
 # 3. Convenção para constantes
 PI = 3.14159  # por convenção, constantes usam letras maiúsculas
 print("Valor de PI:", PI)
@@ -59,7 +55,4 @@ print(bool(0))      # False
 print(bool(1))      # True
 print(bool(""))     # False
 print(bool("abc"))  # True
-
-# Uso de f-string para imprimir valores dentro da mensagem
-# O 'f' antes da string permite colocar variáveis diretamente entre chaves {}
-print(f"{usuario} tem {idade_input} anos.")
+print(bool([]))     # False
