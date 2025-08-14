@@ -38,9 +38,27 @@ print("Bem-vindo,", usuario)
 idade_input = input("Digite sua idade: ")
 print("Tipo antes da conversão:", type(idade_input))
 
-# Alteração de tipo de variável: convertemos de string para inteiro
-idade_input = int(idade_input)
-print("Tipo após a conversão:", type(idade_input))
+# 6. Conversões de tipos
+
+# String para inteiro
+numero_str = "10"
+numero_int = int(numero_str)
+print(numero_str, "->", type(numero_str))
+print(numero_int, "->", type(numero_int))
+
+# Inteiro para float
+numero_float = float(numero_int)
+print(numero_float, "->", type(numero_float))
+
+# Float para string
+altura_str = str(altura)
+print(altura_str, "->", type(altura_str))
+
+# Qualquer valor para booleano
+print(bool(0))      # False
+print(bool(1))      # True
+print(bool(""))     # False
+print(bool("abc"))  # True
 
 # Uso de f-string para imprimir valores dentro da mensagem
 # O 'f' antes da string permite colocar variáveis diretamente entre chaves {}
