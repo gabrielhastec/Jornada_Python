@@ -24,6 +24,7 @@ O objetivo é mostrar **não apenas o resultado**, mas **o processo de aprendiza
 2. [Aula 02 – Manipulação de Strings](#aula-02---manipulação-de-strings)
 3. [Aula 03 – Operadores em Python](#aula-03---operadores-em-python)
 4. [Aula 04 – Estruturas de Controle em Python](#aula-04---estruturas-de-controle-em-python)
+5. [Aula 05 – Estruturas de Dados em Python](#aula-05---estruturas-de-dados-em-python)
 
 ### Projetos
 
@@ -355,5 +356,97 @@ for i in range(num + 1):
 * **Laços de repetição (`for`, `while`)** repetem blocos de código e podem ser controlados por **`break`**, **`continue`** e **`pass`**.
 * **Estruturas aninhadas** possibilitam criar lógica mais complexa combinando loops e condicionais.
 * Aplicar essas estruturas em exercícios práticos ajuda a **entender o fluxo do programa e a tomada de decisões automáticas**.
+
+---
+
+# 📚 Aula 05 – Estruturas de Dados em Python
+
+**Data:** *14/08/2025*
+
+### 🧠 Objetivo
+
+Aprender a **armazenar e organizar informações** usando as principais **estruturas de dados em Python**, incluindo **listas, tuplas, dicionários e conjuntos**. Aplicar os conceitos em **exercícios práticos** com interação do usuário.
+
+### ⚡ Conceitos Principais
+
+1. **Listas** → coleções **ordenadas e mutáveis** de itens.
+
+   * `append()` → adiciona um item no final.
+   * `remove()` → remove um item específico.
+   * `len()` → retorna o tamanho da lista.
+   * Indexação → acessar itens por posição: `lista[0]`.
+
+2. **Tuplas** → coleções **ordenadas e imutáveis** de itens.
+
+   * Indexação → acessar itens por posição: `tupla[0]`.
+   * `len()` → retorna o tamanho da tupla.
+
+3. **Dicionários** → coleções **não ordenadas de pares chave-valor**.
+
+   * Acesso → `dicionario[chave]`.
+   * Atualizar → `dicionario[chave] = valor`.
+   * Adicionar → `dicionario[nova_chave] = valor`.
+   * Métodos úteis → `keys()`, `values()`.
+
+4. **Conjuntos (Sets)** → coleções **não ordenadas de itens únicos**.
+
+   * `add()` → adiciona item.
+   * `remove()` → remove item.
+   * Operadores de associação → `in`, `not in`.
+   * `len()` → retorna o tamanho do conjunto.
+
+---
+
+### 💡 Exemplos Práticos
+
+```python
+# Listas
+frutas = ["maçã", "banana", "laranja"]
+frutas.append("uva")
+frutas.remove("banana")
+print(frutas)
+print(frutas[0], len(frutas))
+
+# Tuplas
+coordenadas = (10.0, 20.0)
+print(coordenadas, coordenadas[0], len(coordenadas))
+
+# Dicionários
+pessoa = {"nome": "Alice", "idade": 30, "cidade": "São Paulo"}
+pessoa["idade"] = 31
+pessoa["profissão"] = "Engenheira"
+print(pessoa, list(pessoa.keys()), list(pessoa.values()))
+
+# Conjuntos
+numeros = {1,2,3,4,5}
+numeros.add(6)
+numeros.remove(3)
+print(numeros, 4 in numeros, len(numeros))
+
+# Exercício prático – Lista de frutas do usuário
+frutas_usuario = []
+while True:
+    fruta = input("Digite o nome de uma fruta (ou 'sair' para terminar): ")
+    if fruta.lower() == "sair":
+        break
+    frutas_usuario.append(fruta)
+print("Frutas inseridas:", frutas_usuario)
+
+# Exercício prático – Atualizar ano de um livro
+livro = {"título": "1984", "autor": "George Orwell", "ano": 1949}
+novo_ano = int(input("Digite o novo ano de publicação: "))
+livro["ano"] = novo_ano
+print("Informações atualizadas:", livro)
+```
+
+---
+
+### 🧵 Resumo da Aula
+
+* **Listas** → úteis para coleções **mutáveis** e ordenadas de itens.
+* **Tuplas** → ideais quando os dados **não devem ser alterados**.
+* **Dicionários** → perfeitos para **armazenar informações relacionadas por chave**.
+* **Conjuntos** → ótimos para garantir **itens únicos** e realizar operações de associação.
+* Exercícios práticos ajudam a **interagir com dados**, atualizar informações e consolidar o aprendizado.
 
 ---
