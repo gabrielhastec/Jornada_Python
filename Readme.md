@@ -25,6 +25,7 @@ O objetivo é mostrar **não apenas o resultado**, mas **o processo de aprendiza
 3. [Aula 03 – Operadores em Python](#aula-03---operadores-em-python)
 4. [Aula 04 – Estruturas de Controle em Python](#aula-04---estruturas-de-controle-em-python)
 5. [Aula 05 – Estruturas de Dados em Python](#aula-05---estruturas-de-dados-em-python)
+6. [Aula 06 – Funções em Python](#aula-06---funções-em-python)
 
 ### Projetos
 
@@ -450,3 +451,92 @@ print("Informações atualizadas:", livro)
 * Exercícios práticos ajudam a **interagir com dados**, atualizar informações e consolidar o aprendizado.
 
 ---
+
+# 📚 Aula 06 – Funções em Python
+
+**Data:** *14/08/2025*
+
+### 🧠 Objetivo
+
+Aprender a **criar e utilizar funções**, explorando parâmetros, retorno de valores, funções anônimas (lambda), recursividade, funções decoradoras e de ordem superior. Com isso, podemos **organizar melhor o código, torná-lo reutilizável e mais legível**.
+
+### ⚡ Conceitos Principais
+
+* **Funções** → blocos de código reutilizáveis que realizam uma tarefa específica.
+* **Parâmetros e retorno** → funções podem receber entradas e retornar valores.
+* **Funções padrão** → parâmetros com valores padrão.
+* **Funções matemáticas básicas** → `soma()`, `subtracao()`, `multiplicacao()`, `divisao()`.
+* **Manipulação de listas** → `media()`, `maximo()`, `minimo()`.
+* **Funções com passo opcional** → exemplo: `contador()`.
+* **Funções lambda** → funções anônimas para operações simples.
+* **Funções recursivas** → chamam a si mesmas (`fatorial()`, `fibonacci()`).
+* **Funções decoradoras** → modificam o comportamento de outras funções.
+* **Funções aninhadas e de ordem superior** → retornam funções ou recebem funções como argumento.
+* **Funções práticas** → soma de números pares, inverter string, verificar número primo.
+
+---
+
+### 💡 Exemplos Práticos
+
+```python
+# Função simples com parâmetro padrão
+def saudacao(nome="Visitante"):
+    print(f"Olá, {nome}! Bem-vindo(a) à aula de funções.")
+
+saudacao()               # Olá, Visitante!
+saudacao("Maria")        # Olá, Maria!
+
+# Funções matemáticas
+print(soma(5, 3))        # 8
+print(divisao(10, 2))    # 5.0
+
+# Funções de listas
+print(media([1,2,3]))    # 2.0
+print(maximo([1,2,3]))   # 3
+print(minimo([1,2,3]))   # 1
+
+# Funções com passo opcional
+contador(1, 5)           # 1 2 3 4 5
+contador(1, 10, 2)       # 1 3 5 7 9
+
+# Funções lambda
+soma_lambda = lambda x, y: x + y
+par_lambda = lambda x: x % 2 == 0
+print(soma_lambda(10, 20))  # 30
+print(par_lambda(8))         # True
+
+# Funções recursivas
+print(fatorial(5))        # 120
+print(fibonacci(6))       # 8
+
+# Funções decoradoras
+@decorador
+def saudacao_decorada(nome):
+    print(f"Olá, {nome}! Esta é uma função decorada.")
+
+saudacao_decorada("João")
+
+# Funções aninhadas e de ordem superior
+multiplicar_por_3 = funcao_externa(3)
+print(multiplicar_por_3(10))          # 30
+print(aplicar_funcao(lambda x: x**2, [1,2,3,4]))  # [1,4,9,16]
+
+# Exercícios práticos
+print(soma_pares([1,2,3,4,5,6]))      # 12
+print(inverter_string("Python"))      # "nohtyP"
+print(eh_primo(11))                   # True
+print(eh_primo(15))                   # False
+```
+
+---
+
+### 🧵 Resumo da Aula
+
+* Funções permitem **organizar o código e reutilizá-lo**, aumentando legibilidade e eficiência.
+* Parâmetros podem ser **opcionais**, com valores padrão.
+* **Lambda**, **recursão**, **decoradores** e **funções de ordem superior** são recursos avançados para manipulação flexível de funções.
+* Exercícios práticos consolidam a lógica e aplicabilidade das funções em Python.
+* Sempre **documente suas funções** com docstrings para melhorar entendimento e manutenção.
+
+---
+
