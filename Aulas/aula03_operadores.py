@@ -42,15 +42,19 @@ print()
 # Operadores que atribuem valores a variáveis.
 num = 10
 print("4. Operadores de Atribuição:")
-print("   - Atribuição simples (num = 10):", num)
+print("   - Atribuição simples (num = 10):", num)   # Atribui 10 a num
+
 num += 5  # Equivalente a num = num + 5
-print("   - Adição e atribuição (num += 5):", num)
+print("   - Adição e atribuição (num += 5):", num)  # Adiciona 5 a num
+
 num -= 3  # Equivalente a num = num - 3
-print("   - Subtração e atribuição (num -= 3):", num)
+print("   - Subtração e atribuição (num -= 3):", num)   # Subtrai 3 de num
+
 num *= 2  # Equivalente a num = num * 2
-print("   - Multiplicação e atribuição (num *= 2):", num)
+print("   - Multiplicação e atribuição (num *= 2):", num)   # Multiplica num por 2
+
 num /= 4  # Equivalente a num = num / 4
-print("   - Divisão e atribuição (num /= 4):", num)
+print("   - Divisão e atribuição (num /= 4):", num) # Divide num por 4
 print()
 
 # 5. Operadores de Identidade

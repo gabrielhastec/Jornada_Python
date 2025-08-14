@@ -23,6 +23,7 @@ O objetivo é mostrar **não apenas o resultado**, mas **o processo de aprendiza
 1. [Aula 01 – Introdução ao Python](#aula-01---introdução-ao-python)
 2. [Aula 02 – Manipulação de Strings](#aula-02---manipulação-de-strings)
 3. [Aula 03 – Operadores em Python](#aula-03---operadores-em-python)
+4. [Aula 04 – Estruturas de Controle em Python](#aula-04---estruturas-de-controle-em-python)
 
 ### Projetos
 
@@ -256,5 +257,103 @@ print("(num1 > 0) and (num2 > 0):", (num1 > 0) and (num2 > 0))
 * Operadores permitem **manipular números e variáveis**, realizar **comparações**, combinar **expressões booleanas** e atualizar valores de forma prática.
 * **Operadores de identidade e associação** ajudam a verificar **objetos em memória** ou **elementos em sequências**.
 * Aplicar operadores em **exercícios práticos** ajuda a fixar a lógica e entender **como Python avalia expressões**.
+
+---
+
+# 📚 Aula 04 – Estruturas de Controle em Python
+
+**Data:** *14/08/2025*
+
+### 🧠 Objetivo
+
+Aprender a **controlar o fluxo do programa** em Python, utilizando **decisões condicionais**, **laços de repetição**, **comandos de controle de fluxo** e **estruturas aninhadas**. Aplicar esses conceitos em **exemplos práticos** e exercícios.
+
+### ⚡ Conceitos Principais
+
+1. **Estruturas Condicionais** → executam blocos de código conforme condições.
+
+   * `if` → executa se a condição for verdadeira.
+   * `elif` → executa se a condição anterior for falsa e esta for verdadeira.
+   * `else` → executa se todas as condições anteriores forem falsas.
+
+2. **Estruturas de Repetição** → executam blocos de código várias vezes.
+
+   * `while` → repete enquanto a condição for verdadeira.
+   * `for` → itera sobre sequências (listas, strings, ranges).
+
+3. **Estruturas de Controle de Fluxo** → alteram o fluxo normal do programa.
+
+   * `break` → interrompe o loop imediatamente.
+   * `continue` → pula a iteração atual e continua no loop.
+   * `pass` → comando nulo; não faz nada, mas é sintaticamente necessário.
+
+4. **Estruturas Aninhadas** → colocar uma estrutura de controle dentro de outra.
+
+---
+
+### 💡 Exemplos Práticos
+
+```python
+# 1️⃣ Estruturas Condicionais
+x = 10
+if x > 0:
+    print("x é positivo")
+elif x < 0:
+    print("x é negativo")
+else:
+    print("x é zero")
+
+# 2️⃣ Loop while
+count = 0
+while count < 5:
+    print("Contagem:", count)
+    count += 1
+
+# 3️⃣ Loop for
+for i in range(5):
+    print("Iteração:", i)
+
+# 4️⃣ Controle de Fluxo
+for i in range(5):
+    if i == 3:
+        break
+    print("Valor antes do break:", i)
+
+for i in range(5):
+    if i == 2:
+        continue
+    print("Valor após o continue:", i)
+
+for i in range(3):
+    if i == 1:
+        pass
+    print("Valor com pass:", i)
+
+# 5️⃣ Estruturas Aninhadas
+for i in range(3):
+    print("Loop externo, i =", i)
+    for j in range(2):
+        print("   Loop interno, j =", j)
+
+# 6️⃣ Exercício Prático
+num = int(input("Digite um número: "))
+if num % 2 == 0:
+    print("O número é par.")
+else:
+    print("O número é ímpar.")
+
+print("Números de 0 até", num, ":")
+for i in range(num + 1):
+    print(i)
+```
+
+---
+
+### 🧵 Resumo da Aula
+
+* **Condicionais (`if`, `elif`, `else`)** permitem executar diferentes ações conforme condições.
+* **Laços de repetição (`for`, `while`)** repetem blocos de código e podem ser controlados por **`break`**, **`continue`** e **`pass`**.
+* **Estruturas aninhadas** possibilitam criar lógica mais complexa combinando loops e condicionais.
+* Aplicar essas estruturas em exercícios práticos ajuda a **entender o fluxo do programa e a tomada de decisões automáticas**.
 
 ---
