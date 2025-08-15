@@ -39,6 +39,8 @@ def contador(inicio, fim, passo=1):
     print()
 
 # Função que verifica se um número é par ou ímpar
+# Esta função retorna "Par" ou "Ímpar" com base no número fornecido.
+# O % operador é usado para verificar a paridade.
 def par_ou_impar(numero): return "Par" if numero % 2 == 0 else "Ímpar"
 
 # Funções para cálculo de áreas
@@ -50,13 +52,17 @@ def area_circulo(raio):
 def area_triangulo(base, altura): return (base * altura) / 2
 def area_quadrado(lado): return lado ** 2
 
-# Funções lambda
+# 2. Funções lambda
 # Funções anônimas para operações simples.
+# Estas funções são úteis para operações rápidas e pequenas.
+# Exemplo de função lambda para soma e verificação de paridade.
+# Funções lambda são úteis para operações simples e podem ser usadas como argumentos em outras funções.
 soma_lambda = lambda x, y: x + y
 par_lambda = lambda x: x % 2 == 0
 
 # Funções recursivas
 # Estas funções chamam a si mesmas para resolver problemas.
+# Exemplo de função recursiva para calcular fatorial e Fibonacci.
 def fatorial(n): return 1 if n <= 1 else n * fatorial(n - 1)
 def fibonacci(n): return n if n <= 1 else fibonacci(n - 1) + fibonacci(n - 2)
 
@@ -122,7 +128,19 @@ def eh_primo(n):
             return False
     return True
 
+# 4. Crie uma função que receba dois números e retorne o maior deles.
+def maior_numero(a, b):
+    return a if a > b else b
+
+# 5. Crie uma função que receba uma lista de strings e retorne a lista ordenada em ordem alfabética.
+def ordenar_strings(lista):
+    return sorted(lista)
+
+
 # Testando as funções
+# Este bloco de código é executado quando o arquivo é executado
+# diretamente, permitindo testar as funções definidas acima.
+# Você pode comentar ou descomentar as linhas abaixo para testar as funções individualmente.
 if __name__ == "__main__":
 
     # Teste da função de saudação
@@ -167,10 +185,6 @@ if __name__ == "__main__":
     exemplo_tempo_execucao(1000000)
 
     # Teste das funções aninhadas e de ordem superior
-    multiplicar_por_3 = funcao_externa(3)
-    print("3 vezes 10 é: ", multiplicar_por_3(10))
-    print("Aplicando função (x^2) a lista [1, 2, 3, 4]: ", aplicar_funcao(lambda x: x**2, [1, 2, 3, 4]))
-    print("Soma dos números pares na lista [1, 2, 3, 4, 5, 6]: ", soma_pares([1, 2, 3, 4, 5, 6]))
-    print("String 'Python' invertida é: ", inverter_string("Python"))
-    print("O número 11 é primo? ", eh_primo(11))
-    print("O número 15 é primo? ", eh_primo(15))
+    funcao = funcao_externa(5)
+    print("Função aninhada (5 * 3): ", funcao(3))
+    print("Função de ordem superior (aplicar função lambda): ", aplicar_funcao(par_lambda, [1, 2, 3, 4, 5]))

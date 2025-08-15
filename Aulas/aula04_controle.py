@@ -25,10 +25,25 @@ while count < 5:    # Continua enquanto count for menor que 5
     count += 1  # Incrementa count em 1
 print()
 
-# 2.2. Loop for
-# O loop for itera sobre uma sequência (como uma lista ou string).
+# 2.3. Loop for percorrendo uma string
+# O loop for percorre cada caractere de uma string.
+string = "Python"
+for char in string:  # Itera sobre cada caractere na string
+    print("   - Caractere:", char)
+print()
+
+# 2.4. Loop for com range
+# O loop for itera sobre uma sequência de números gerada pela função range.
+print("2.2. Loop for com range:")
 for i in range(5):  # Itera de 0 a 4
     print("   - Iteração:", i)
+print()
+
+# 2.5. Loop for com lista
+# Podemos iterar diretamente sobre os elementos de uma lista.
+lista = ['a', 'b', 'c']
+for letra in lista:  # Itera sobre cada letra na lista
+    print("   - Letra:", letra)
 print()
 
 # 3. Estruturas de Controle de Fluxo
