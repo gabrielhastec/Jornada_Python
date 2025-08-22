@@ -1,5 +1,5 @@
 
-# Aula 01 - Introdução ao Python 🐍
+# Aula 02 - Trabalhando com Texto (Strings) 📝
 
 > **Autor:** Gabriel Rodrigues  
 > **Status:** Concluída  
@@ -9,53 +9,55 @@
 
 ## 📌 Objetivo da Aula
 
-Esta aula introduz os conceitos básicos de **Python**, incluindo impressão de mensagens, criação de variáveis, constantes, entrada de dados, conversões de tipos e comentários.
+Nesta aula, exploramos como manipular textos em Python utilizando **strings**.  
+Aprendemos conceitos básicos de concatenação, repetição, indexação, fatiamento e métodos úteis de string.
 
 ---
 
 ## 📚 Conteúdo da Aula
 
-1. **Imprimir mensagens na tela**  
-   - Uso do `print()` para exibir informações.
-2. **Criação de variáveis**  
-   - Tipos: `string`, `int`, `float`, `bool`.
-3. **Constantes**  
-   - Convenção: letras maiúsculas (`PI = 3.14159`).
-4. **Snake Case**  
-   - Convenção de nomenclatura com sublinhados (`meu_nome_completo`).
-5. **Entrada de dados do usuário**  
-   - Uso do `input()` para capturar informações.
-6. **Conversão de tipos**  
-   - `str()`, `int()`, `float()`, `bool()`.
-7. **Verificação de tipos**  
-   - Uso do `type()` para identificar tipos de variáveis.
-8. **Comentários**  
-   - Linha única e múltiplas linhas (`#` e `""" """`).
+1. **Concatenação de strings**  
+   - Juntar nomes, frases ou palavras usando o operador `+`.
+2. **Repetição de strings**  
+   - Repetir caracteres ou textos usando o operador `*`.
+3. **Indexação**  
+   - Acessar caracteres específicos de uma string usando índices.
+4. **Fatiamento (Slicing)**  
+   - Extrair partes de uma string usando `[inicio:fim]`.
+5. **Quebra de linha (`\n`) e tabulação (`\t`)**  
+   - Organizar textos no terminal.
+6. **Métodos de strings**  
+   - Transformação: `.upper()`, `.lower()`, `.title()`, `.capitalize()`, `.swapcase()`  
+   - Análise: `.len()`, `.split()`, `.startswith()`, `.endswith()`, `.isalpha()`, `.isalnum()`, `.isdigit()`, `.isspace()`  
+   - Limpeza e substituição: `.strip()`, `.replace()`  
+   - Contagem e busca: `.count()`, `.find()`, `.index()`
+7. **Formatação com f-strings**  
+   - Inserir variáveis diretamente em strings usando `{}`.
 
 ---
 
 ## 💻 Código da Aula
 
 O código completo da aula está no arquivo:  
-[Aula_01_Básico/aula_01_basico.py](./aula_01_basico.py)
+[Aula_02_Texto/aula_02_texto.py](./Aula_02_texto.py)
 
 ---
 
 ## 🏋 Exercício de Fixação
 
-Para fixar o conteúdo, realize o exercício 01.
+Para fixar o conteúdo, realize o exercício 02, que aborda todos os conceitos de manipulação de strings aprendidos nesta aula.
 
 - **Arquivo do exercício:**  
-  [Exercicio_01.py](./Exercicio_01.py)
+  [Exercicio_02.py](./Exercicio_02.py)
 
 **O que fazer no exercício:**
 
-1. Criar variáveis com diferentes tipos de dados (`string`, `int`, `float`, `bool`) e exibir no console.
-2. Solicitar entrada do usuário (`input()`) para nome e idade.
-3. Converter os valores digitados para os tipos corretos (`int`, `float` ou `str`) quando necessário.
-4. Exibir mensagens usando `print()` com concatenação e f-strings.
-5. Demonstrar conversão para booleano com diferentes valores.
-6. Verificar tipos das variáveis usando `type()`.
+1. Solicitar ao usuário que digite nome e sobrenome, e mostrar a concatenação.
+2. Criar uma linha decorativa usando repetição de caracteres.
+3. Solicitar uma frase e demonstrar indexação e fatiamento.
+4. Demonstrar quebra de linha e tabulação.
+5. Aplicar métodos de transformação, análise, substituição e contagem em uma frase.
+6. Usar f-string para exibir nome e idade do usuário.
 
 > ✅ O exercício já inclui respostas que serão exibidas no console ao executar o arquivo.
 
@@ -63,10 +65,9 @@ Para fixar o conteúdo, realize o exercício 01.
 
 ## 🎯 Aprendizados
 
-- Primeiros passos com **Python**.  
-- Criação de variáveis e constantes.  
-- Entrada de dados e conversões de tipos.  
-- Uso de comentários para documentar o código.  
+- Manipulação de texto no Python usando **strings**.  
+- Compreensão de **métodos úteis** para transformação e análise de textos.  
+- Uso de **f-strings** para formatação de saídas.  
 
 ---
 
@@ -83,8 +84,9 @@ Para fixar o conteúdo, realize o exercício 01.
 
 Aulas/
 ├── Aula\_01\_Básico/
-│   ├── aula\_01\_basico.py
-│   └── Exercicio\_01.py
+├── Aula\_02\_Texto/
+│   ├── Aula\_02\_texto.py
+│   └── Exercicio\_02.py
 
 ```
 

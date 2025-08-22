@@ -40,7 +40,7 @@ Aprendemos conceitos básicos de **aritméticos, comparação, lógicos, atribui
 ## 💻 Código da Aula
 
 O código completo da aula está no arquivo:  
-[Aula_03_Operadores/aula_03_operadores.py](./aula_03_operadores.py)
+[Aula_03_Operadores/Aula_03_operadores.py](./Aula_03_operadores.py)
 
 ---
 
@@ -86,9 +86,9 @@ Para fixar o conteúdo, realize o **Exercício 03**, que aborda os principais op
 
 Aulas/
 ├── Aula\_01\_Básico/
-├── Aula\_02\_Trabalhando\_com\_Texto/
+├── Aula\_02\_Texto/
 ├── Aula\_03\_Operadores/
-│   ├── aula\_03\_operadores.py
+│   ├── Aula\_03\_operadores.py
 │   └── Exercicio\_03.py
 
 ```

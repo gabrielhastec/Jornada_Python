@@ -1,9 +1,6 @@
 # Exercício 04 - Estruturas de Controle em Python
 # Autor: Gabriel Rodrigues
 
-# Exercício 04 - Estruturas de Controle em Python
-# Autor: Gabriel Rodrigues
-
 # 1. Peça ao usuário um número e diga se ele é par ou ímpar.
 numero = int(input("Digite um número inteiro: "))
 if numero % 2 == 0:
