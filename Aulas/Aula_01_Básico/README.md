@@ -1,123 +1,93 @@
 
-# 📚 Aula 01 – Introdução ao Python
+# Aula 01 - Introdução ao Python 🐍
 
-![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python\&logoColor=white) ![Nível](https://img.shields.io/badge/Nível-Básico-green) ![Status](https://img.shields.io/badge/Status-Concluída-brightgreen)
-
-**Autor:** Gabriel Rodrigues
-**Data:** 13/08/2025
-
----
-
-## 🧠 Objetivo da Aula
-
-Nesta aula você aprenderá:
-
-* Como imprimir mensagens no terminal
-* Criação e manipulação de variáveis
-* Tipos de dados básicos: `str`, `int`, `float` e `bool`
-* Convenções de nomenclatura (snake\_case)
-* Uso de constantes
-* Entrada de dados com `input()`
-* Conversão de tipos (`int()`, `float()`, `str()`, `bool()`)
-* Verificação de tipos com `type()`
-* Uso de comentários
+> **Autor:** Gabriel Rodrigues  
+> **Status:** Concluída  
+> **Data:** 13/08/2025  
 
 ---
 
-## ⚡ Conteúdos e Exemplos
+## 📌 Objetivo da Aula
 
-### 1️⃣ Imprimindo mensagens
+Esta aula introduz os conceitos básicos de **Python**, incluindo impressão de mensagens, criação de variáveis, constantes, entrada de dados, conversões de tipos e comentários.
 
-```python
-print("Olá, mundo!")
-print("Estou aprendendo Python!\n")
+---
+
+## 📚 Conteúdo da Aula
+
+1. **Imprimir mensagens na tela**  
+   - Uso do `print()` para exibir informações.
+2. **Criação de variáveis**  
+   - Tipos: `string`, `int`, `float`, `bool`.
+3. **Constantes**  
+   - Convenção: letras maiúsculas (`PI = 3.14159`).
+4. **Snake Case**  
+   - Convenção de nomenclatura com sublinhados (`meu_nome_completo`).
+5. **Entrada de dados do usuário**  
+   - Uso do `input()` para capturar informações.
+6. **Conversão de tipos**  
+   - `str()`, `int()`, `float()`, `bool()`.
+7. **Verificação de tipos**  
+   - Uso do `type()` para identificar tipos de variáveis.
+8. **Comentários**  
+   - Linha única e múltiplas linhas (`#` e `""" """`).
+
+---
+
+## 💻 Código da Aula
+
+O código completo da aula está no arquivo:  
+[Aula_01_Básico/aula_01_basico.py](./aula_01_basico.py)
+
+---
+
+## 🏋 Exercício de Fixação
+
+Para fixar o conteúdo, realize o exercício 01.
+
+- **Arquivo do exercício:**  
+  [Exercicio_01.py](./Exercicio_01.py)
+
+**O que fazer no exercício:**
+
+1. Criar variáveis com diferentes tipos de dados (`string`, `int`, `float`, `bool`) e exibir no console.
+2. Solicitar entrada do usuário (`input()`) para nome e idade.
+3. Converter os valores digitados para os tipos corretos (`int`, `float` ou `str`) quando necessário.
+4. Exibir mensagens usando `print()` com concatenação e f-strings.
+5. Demonstrar conversão para booleano com diferentes valores.
+6. Verificar tipos das variáveis usando `type()`.
+
+> ✅ O exercício já inclui respostas que serão exibidas no console ao executar o arquivo.
+
+---
+
+## 🎯 Aprendizados
+
+- Primeiros passos com **Python**.  
+- Criação de variáveis e constantes.  
+- Entrada de dados e conversões de tipos.  
+- Uso de comentários para documentar o código.  
+
+---
+
+## 🛠 Tecnologias
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![Editor](https://img.shields.io/badge/Editor-VS%20Code-007ACC?style=flat&logo=visual-studio-code&logoColor=white)
+
+---
+
+## 📂 Estrutura do Projeto (Aulas)
+
 ```
 
-### 2️⃣ Variáveis e tipos de dados
+Aulas/
+├── Aula\_01\_Básico/
+│   ├── aula\_01\_basico.py
+│   └── Exercicio\_01.py
 
-```python
-nome = "Gabriel"
-idade = 25
-altura = 1.78
-estudando = True
-
-print(nome, idade, altura, estudando)
-```
-
-### 3️⃣ Constantes e snake\_case
-
-```python
-PI = 3.14159
-meu_nome_completo = "Gabriel Rodrigues"
-idade_usuario = 25
-```
-
-### 4️⃣ Entrada de dados
-
-```python
-nome_completo = input("Digite seu nome completo: ")
-idade_input = input("Digite sua idade: ")
-```
-
-### 5️⃣ Conversão de tipos
-
-```python
-numero_int = int("10")
-numero_float = float(numero_int)
-altura_str = str(altura)
-print(bool(0), bool(1), bool("Python"), bool(""))
-```
-
-### 6️⃣ Verificação de tipos
-
-```python
-print(type(nome))
-print(type(idade))
-print(type(altura))
-print(type(estudando))
 ```
 
 ---
 
-## 📝 Exercício 01 – Fixação
-
-**Objetivo:** Fixar o que foi aprendido nesta aula, praticando variáveis, tipos de dados, entrada de informações e conversão de tipos.
-
-### Instruções
-
-1. Crie variáveis para armazenar:
-
-   * Seu nome (string)
-   * Sua idade (inteiro)
-   * Sua altura (float)
-   * Se você está estudando Python (booleano)
-
-2. Exiba todas as informações usando `print()`
-
-3. Solicite ao usuário:
-
-   * Nome completo
-   * Idade
-
-4. Converta a idade digitada para inteiro
-
-5. Crie uma constante `PI = 3.14` e exiba
-
-6. Converta a altura para string e exiba o tipo antes e depois
-
-7. Teste a conversão de valores para booleano: `0`, `1`, `"Python"`, `""`
-
-8. Verifique o tipo de todas as variáveis usando `type()`
-
-💡 **Dica:** Utilize comentários e a convenção **snake\_case**.
-
-[📂 Abrir Exercício 01](./Exercicio_01.py) ✅
-
----
-
-### 🧵 Resumo da Aula
-
-* Impressão de mensagens e entrada de dados são essenciais para interagir com o usuário
-* Variáveis armazenam dados e cada tipo de dado tem suas regras
-* Conversões e verificação de tipos ajudam a garantir que o programa funcione corretamente
-* Constantes e convenções de nomenclatura facilitam a leitura e manutenção do código
+> Desenvolvido por Gabriel Rodrigues 🐍
