@@ -1,542 +1,117 @@
 
 # 🚀 Jornada Python – Meu Aprendizado Passo a Passo
 
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python\&logoColor=white) ![Status](https://img.shields.io/badge/Status-Em%20Andamento-yellow) ![Projetos](https://img.shields.io/badge/Projetos-Em%20Desenvolvimento-orange)
+
 Este repositório documenta minha evolução no aprendizado de **Python**, desde conceitos iniciais até a criação de projetos.
 O objetivo é mostrar **não apenas o resultado**, mas **o processo de aprendizado**, com códigos de aulas, exemplos práticos e exercícios.
+
+⚠️ Observação: Este curso está em andamento. Algumas aulas e projetos ainda serão atualizados e expandidos.
 
 ---
 
 ## 🗂 Estrutura do Repositório
 
-* **📂 aulas/** → códigos e anotações de cada aula.
-* **📂 projetos/** → projetos que aplicam os conhecimentos adquiridos.
-* **📄 README.md** → índice das aulas, conceitos aprendidos e exemplos.
+```
+Jornada_Python/
+│
+├── Aulas/
+│   ├── Aula_01_Básico/
+│   ├── Aula_02_Texto/
+│   ├── Aula_03_Operadores/
+│   ├── Aula_04_Controle/
+│   ├── Aula_05_Estruturas/
+│   ├── Aula_06_Funcoes/
+│   └── Materiais/
+│
+├── Projetos_Curso/
+│   ├── Projeto_01_Calculadora/
+│   ├── Projeto_02_Agenda_Telefonica/
+│   └── Sistema_Financeiro/
+│
+└── Utils/
+    ├── estruturas_dados.py
+    ├── helpers.py
+    └── __init__.py
+```
 
 > Este registro funciona como um **portfólio vivo**, mostrando evolução e prática constante.
 
 ---
 
-## 📝 Índice
+## 📝 Índice do Curso
 
-### Aulas
+### 📚 Aulas Concluídas
 
-1. [Aula 01 – Introdução ao Python](#aula-01---introdução-ao-python)
-2. [Aula 02 – Manipulação de Strings](#aula-02---manipulação-de-strings)
-3. [Aula 03 – Operadores em Python](#aula-03---operadores-em-python)
-4. [Aula 04 – Estruturas de Controle em Python](#aula-04---estruturas-de-controle-em-python)
-5. [Aula 05 – Estruturas de Dados em Python](#aula-05---estruturas-de-dados-em-python)
-6. [Aula 06 – Funções em Python](#aula-06---funções-em-python)
+| Aula  | Tema       | Código                                                                    | Exercício                                                    | README                                       | Status    |
+| ----- | ---------- | ------------------------------------------------------------------------- | ------------------------------------------------------------ | -------------------------------------------- | --------- |
+| 🟢 01 | Básico     | [aula\_01\_basico.py](Aulas/Aula_01_Básico/aula_01_basico.py)             | [Exercicio\_01.py](Aulas/Aula_01_Básico/Exercicio_01.py)     | [README](Aulas/Aula_01_Básico/README.md)     | Concluído |
+| 🟢 02 | Texto      | [Aula\_02\_texto.py](Aulas/Aula_02_Texto/Aula_02_texto.py)                | [Exercicio\_02.py](Aulas/Aula_02_Texto/Exercicio_02.py)      | [README](Aulas/Aula_02_Texto/README.md)      | Concluído |
+| 🟢 03 | Operadores | [Aula\_03\_operadores.py](Aulas/Aula_03_Operadores/Aula_03_operadores.py) | [Exercicio\_03.py](Aulas/Aula_03_Operadores/Exercicio_03.py) | [README](Aulas/Aula_03_Operadores/README.md) | Concluído |
+| 🟢 04 | Controle   | [Aula\_04\_controle.py](Aulas/Aula_04_Controle/Aula_04_controle.py)       | [Exercicio\_04.py](Aulas/Aula_04_Controle/Exercicio_04.py)   | [README](Aulas/Aula_04_Controle/README.md)   | Concluído |
+| 🟢 05 | Estruturas | [Aula\_05\_estruturas.py](Aulas/Aula_05_Estruturas/Aula_05_estruturas.py) | [Exercicio\_05.py](Aulas/Aula_05_Estruturas/Exercicio_05.py) | [README](Aulas/Aula_05_Estruturas/README.md) | Concluído |
+| 🟢 06 | Funções    | [Aula\_06\_funcoes.py](Aulas/Aula_06_Funcoes/Aula_06_funcoes.py)          | [Exercicio\_06.py](Aulas/Aula_06_Funcoes/Exercicio_06.py)    | [README](Aulas/Aula_06_Funcoes/README.md)    | Concluído |
 
-### Projetos
+> 🔹 Verde 🟢 → Concluído
+> 🔹 Amarelo 🟡 → Em andamento ou novas aulas futuras
 
-<!-- Futuras projetos serão adicionados aqui -->
+### 📚 Aulas Futuras
 
----
-
-# 📚 Aula 01 – Introdução ao Python
-
-**Data:** *13/08/2025*
-
-### 🧠 Objetivo
-
-Aprender a **interagir com o terminal**, criar e manipular **variáveis básicas**, aplicar **convenções de código** e exibir informações de forma clara usando `print()` e `input()`.
-
-### ⚡ Conceitos Principais
-
-* `print()` → exibir mensagens no terminal.
-* `input()` → receber dados do usuário.
-* Tipos de dados: `str`, `int`, `float`, `bool`.
-* Conversão de tipos: `int()`, `float()`, `str()`, `bool()`.
-* Constantes → convenção em maiúsculas (`PI`).
-* Convenção de nomes (snake\_case): `meu_nome_completo`.
-
-### 💡 Exemplo Prático
-
-```python
-# Entrada de dados
-usuario = input("Digite seu nome: ")
-idade_input = int(input("Digite sua idade: "))
-
-# Exibição
-print(usuario, "tem", idade_input, "anos.")
-
-# Conversão de tipos
-numero_str = "10"
-numero_int = int(numero_str)
-numero_float = float(numero_int)
-altura_str = str(1.78)
-print(numero_str, numero_int, numero_float, altura_str)
-```
+* Aula 07 – Módulos e Pacotes
+* Aula 08 – Arquivos e Persistência de Dados
+* Aula 09 – Orientação a Objetos
+* … e outras que ainda serão adicionadas
 
 ---
 
-# 📚 Aula 02 – Manipulação de Strings
+### 🛠 Utils
 
-**Data:** *13/08/2025*
-
-### 🧠 Objetivo
-
-Aprender a **trabalhar com texto**, manipulando **strings**, formatando saídas e utilizando métodos úteis para análise e transformação de textos.
-
-### ⚡ Conceitos Principais
-
-* **Strings** → textos delimitados por `'` ou `"`.
-* **Concatenação** → juntar strings com `+`.
-* **Repetição** → repetir strings com `*`.
-* **Indexação** → acessar caracteres por índice (`0`, `-1`).
-* **Fatiamento (Slicing)** → extrair partes da string `[início:fim]`.
-* **Métodos úteis:**
-  `.upper()`, `.lower()`, `.title()`, `.capitalize()`, `.swapcase()`, `len()`, `.split()`,
-  `.startswith()`, `.endswith()`, `.isalpha()`, `.isalnum()`, `.isdigit()`,
-  `.isspace()`, `.strip()`, `.replace()`, `.count()`, `.find()`
-* **f-strings** → formatar strings de forma legível e inserir variáveis diretamente.
+* 📂 **Utils/estruturas\_dados.py** → funções para manipulação de listas, dicionários e conjuntos.
+* 📂 **Utils/helpers.py** → funções auxiliares para os projetos.
+* 📂 **Utils/**init**.py** → permite a importação dos módulos como pacote.
 
 ---
 
-### 💡 Exemplos Práticos
+### 🧩 Projetos do Curso
 
-```python
-# Entrada de dados
-nome = input("Digite seu nome: ")
-sobrenome = input("Digite seu sobrenome: ")
-nome_completo = nome + " " + sobrenome
-frase = "  Python é legal  "
-
-# 1️⃣ Concatenar e repetir strings
-print(nome_completo)       # Ex.: "Gabriel Rodrigues"
-print("Python! " * 3)      # "Python! Python! Python! "
-
-# 2️⃣ Indexação e fatiamento
-print(frase[0])            # Primeiro caractere
-print(frase[-1])           # Último caractere
-print(frase[0:6])          # Primeiros 6 caracteres
-print(frase[-5:])          # Últimos 5 caracteres
-
-# 3️⃣ Métodos de transformação
-print(frase.upper())       # Maiúsculas
-print(frase.lower())       # Minúsculas
-print(frase.title())       # Primeira letra de cada palavra maiúscula
-print(frase.capitalize())  # Primeira letra maiúscula da frase
-print(frase.swapcase())    # Inverte letra maiuscula por minuscula 
-
-# 4️⃣ Métodos de análise
-print(len(frase))          # Comprimento total da string
-print(frase.split())       # Divide a string em palavras
-print(frase.startswith("Python"))  # Verifica início
-print(frase.endswith("legal"))     # Verifica final
-print(frase.isalpha())     # Só letras? False
-print(frase.isalnum())     # Só letras e números? False
-print(frase.isdigit())     # Só números? False
-print(frase.isspace())     # Só espaços? False
-
-# 5️⃣ Limpeza e substituição
-print(frase.strip())       # Remove espaços no início/fim
-print(frase.replace(" ", "_"))  # Substitui espaços por "_"
-
-# 6️⃣ Contagem e busca
-print(frase.lower().count("a"))  # Conta a letra "a"
-print(frase.find("legal"))       # Índice de início da palavra "legal"
-
-# 7️⃣ f-strings
-idade = int(input("Digite sua idade: "))
-print(f"Meu nome é {nome_completo} e tenho {idade} anos.")
-```
+| Projeto                            | Descrição                                                          | Código Principal                                                        | README                                                |
+| ---------------------------------- | ------------------------------------------------------------------ | ----------------------------------------------------------------------- | ----------------------------------------------------- |
+| 🧮 Projeto 01 – Calculadora        | Calculadora básica com operações matemáticas                       | [Código](Projetos_Curso/Projeto_01_Calculadora/)                        | -                                                     |
+| 📇 Projeto 02 – Agenda Telefônica  | Cadastro e busca de contatos usando listas e dicionários           | [Código](Projetos_Curso/Projeto_02_Agenda_Telefonica/)                  | -                                                     |
+| 💰 Projeto 03 – Sistema Financeiro | Controle financeiro com receitas, despesas e integração de módulos | [sistema\_caixa.py](Projetos_Curso/Sistema_Financeiro/sistema_caixa.py) | [README](Projetos_Curso/Sistema_Financeiro/readme.md) |
 
 ---
 
-### 🧵 Resumo da Aula
+### 🔹 Resumo das Aulas Concluídas
 
-* Strings podem ser **manipuladas** com métodos que transformam, analisam e formatam o texto.
-* Métodos como `.upper()`, `.lower()`, `.title()`, `.capitalize()`, `.strip()`, `.replace()`, `.count()` e `.find()` são **essenciais para limpeza e análise de textos**.
-* Podemos **concatenar**, **repetir**, **indexar** e **fatiar** strings para extrair ou organizar informações.
-* **f-strings** permitem inserir variáveis diretamente dentro do texto de forma legível.
+**Aula 01 – Básico 🟢**
 
----
+* Tipos de dados, variáveis, `print()`, `input()`, convenções e constantes.
 
-# 📚 Aula 03 – Operadores em Python
+**Aula 02 – Texto 🟢**
 
-**Data:** *14/08/2025*
+* Manipulação de strings, fatiamento, métodos de transformação e análise, f-strings.
 
-### 🧠 Objetivo
+**Aula 03 – Operadores 🟢**
 
-Aprender a **trabalhar com operadores em Python**, entendendo como realizar **operações matemáticas**, **comparações**, **atribuições**, **operações lógicas** e **verificações de identidade e associação**. Aplicar esses conceitos em **exemplos práticos**.
+* Operadores aritméticos, lógicos, de comparação, atribuição, identidade e associação.
 
-### ⚡ Conceitos Principais
+**Aula 04 – Controle 🟢**
 
-1. **Operadores Aritméticos** → realizam cálculos matemáticos.
+* Condicionais (`if/elif/else`), loops (`for/while`), controle de fluxo (`break/continue/pass`) e estruturas aninhadas.
 
-   * `+` → adição
-   * `-` → subtração
-   * `*` → multiplicação
-   * `/` → divisão (float)
-   * `//` → divisão inteira (int)
-   * `%` → resto da divisão
-   * `**` → exponenciação (potência)
+**Aula 05 – Estruturas 🟢**
 
-2. **Operadores de Comparação** → comparam valores e retornam `True` ou `False`.
+* Listas, tuplas, dicionários e conjuntos; métodos e manipulação prática de dados.
 
-   * `==` → igual
-   * `!=` → diferente
-   * `>` → maior que
-   * `<` → menor que
-   * `>=` → maior ou igual
-   * `<=` → menor ou igual
+**Aula 06 – Funções 🟢**
 
-3. **Operadores Lógicos** → combinam expressões booleanas.
-
-   * `and` → verdadeiro se ambos forem True
-   * `or` → verdadeiro se pelo menos um for True
-   * `not` → inverte o valor booleano
-
-4. **Operadores de Atribuição** → modificam valores de variáveis.
-
-   * `=` → atribuição simples
-   * `+=` → soma e atribui
-   * `-=` → subtração e atribui
-   * `*=` → multiplicação e atribui
-   * `/=` → divisão e atribui
-
-5. **Operadores de Identidade** → verificam se duas variáveis apontam para o **mesmo objeto** na memória.
-
-   * `is` → é o mesmo objeto
-   * `is not` → não é o mesmo objeto
-
-6. **Operadores de Associação** → verificam se um valor está **presente em uma sequência** (listas, tuplas, strings).
-
-   * `in` → está presente
-   * `not in` → não está presente
+* Criação de funções, parâmetros, retorno, lambda, recursão, decoradores e funções de ordem superior.
 
 ---
 
-### 💡 Exemplos Práticos
-
-```python
-# Operadores Aritméticos
-a, b = 10, 3
-print(a + b, a - b, a * b, a / b, a // b, a % b, a ** b)
-
-# Operadores de Comparação
-x, y = 5, 8
-print(x == y, x != y, x > y, x < y, x >= y, x <= y)
-
-# Operadores Lógicos
-p, q = True, False
-print(p and q, p or q, not p)
-
-# Operadores de Atribuição
-num = 10
-num += 5
-num *= 2
-num /= 4
-print(num)
-
-# Operadores de Identidade
-list1 = [1,2,3]; list2 = list1; list3 = [1,2,3]
-print(list1 is list2, list1 is list3, list1 is not list3)
-
-# Operadores de Associação
-frutas = ["maçã","banana","laranja"]
-print("banana" in frutas, "uva" in frutas, "uva" not in frutas)
-
-# Exercício Prático
-num1 = float(input("Digite o primeiro número: "))
-num2 = float(input("Digite o segundo número: "))
-print("Soma:", num1 + num2)
-print("Subtração:", num1 - num2)
-print("Multiplicação:", num1 * num2)
-print("Divisão inteira:", num1 // num2 if num2 != 0 else "Indefinido")
-print("Divisão:", num1 / num2 if num2 != 0 else "Indefinido")
-print("num1 > num2?", num1 > num2)
-print("num1 < num2?", num1 < num2)
-print("num1 == num2?", num1 == num2)
-print("(num1 > 0) and (num2 > 0):", (num1 > 0) and (num2 > 0))
-```
-
----
-
-### 🧵 Resumo da Aula
-
-* Operadores permitem **manipular números e variáveis**, realizar **comparações**, combinar **expressões booleanas** e atualizar valores de forma prática.
-* **Operadores de identidade e associação** ajudam a verificar **objetos em memória** ou **elementos em sequências**.
-* Aplicar operadores em **exercícios práticos** ajuda a fixar a lógica e entender **como Python avalia expressões**.
-
----
-
-# 📚 Aula 04 – Estruturas de Controle em Python
-
-**Data:** *14/08/2025*
-
-### 🧠 Objetivo
-
-Aprender a **controlar o fluxo do programa** em Python, utilizando **decisões condicionais**, **laços de repetição**, **comandos de controle de fluxo** e **estruturas aninhadas**. Aplicar esses conceitos em **exemplos práticos** e exercícios.
-
-### ⚡ Conceitos Principais
-
-1. **Estruturas Condicionais** → executam blocos de código conforme condições.
-
-   * `if` → executa se a condição for verdadeira.
-   * `elif` → executa se a condição anterior for falsa e esta for verdadeira.
-   * `else` → executa se todas as condições anteriores forem falsas.
-
-2. **Estruturas de Repetição** → executam blocos de código várias vezes.
-
-   * `while` → repete enquanto a condição for verdadeira.
-   * `for` → itera sobre sequências (listas, strings, ranges).
-
-3. **Estruturas de Controle de Fluxo** → alteram o fluxo normal do programa.
-
-   * `break` → interrompe o loop imediatamente.
-   * `continue` → pula a iteração atual e continua no loop.
-   * `pass` → comando nulo; não faz nada, mas é sintaticamente necessário.
-
-4. **Estruturas Aninhadas** → colocar uma estrutura de controle dentro de outra.
-
----
-
-### 💡 Exemplos Práticos
-
-```python
-# 1️⃣ Estruturas Condicionais
-x = 10
-if x > 0:
-    print("x é positivo")
-elif x < 0:
-    print("x é negativo")
-else:
-    print("x é zero")
-
-# 2️⃣ Loop while
-count = 0
-while count < 5:
-    print("Contagem:", count)
-    count += 1
-
-# 3️⃣ Loop for
-for i in range(5):
-    print("Iteração:", i)
-
-# 4️⃣ Controle de Fluxo
-for i in range(5):
-    if i == 3:
-        break
-    print("Valor antes do break:", i)
-
-for i in range(5):
-    if i == 2:
-        continue
-    print("Valor após o continue:", i)
-
-for i in range(3):
-    if i == 1:
-        pass
-    print("Valor com pass:", i)
-
-# 5️⃣ Estruturas Aninhadas
-for i in range(3):
-    print("Loop externo, i =", i)
-    for j in range(2):
-        print("   Loop interno, j =", j)
-
-# 6️⃣ Exercício Prático
-num = int(input("Digite um número: "))
-if num % 2 == 0:
-    print("O número é par.")
-else:
-    print("O número é ímpar.")
-
-print("Números de 0 até", num, ":")
-for i in range(num + 1):
-    print(i)
-```
-
----
-
-### 🧵 Resumo da Aula
-
-* **Condicionais (`if`, `elif`, `else`)** permitem executar diferentes ações conforme condições.
-* **Laços de repetição (`for`, `while`)** repetem blocos de código e podem ser controlados por **`break`**, **`continue`** e **`pass`**.
-* **Estruturas aninhadas** possibilitam criar lógica mais complexa combinando loops e condicionais.
-* Aplicar essas estruturas em exercícios práticos ajuda a **entender o fluxo do programa e a tomada de decisões automáticas**.
-
----
-
-# 📚 Aula 05 – Estruturas de Dados em Python
-
-**Data:** *14/08/2025*
-
-### 🧠 Objetivo
-
-Aprender a **armazenar e organizar informações** usando as principais **estruturas de dados em Python**, incluindo **listas, tuplas, dicionários e conjuntos**. Aplicar os conceitos em **exercícios práticos** com interação do usuário.
-
-### ⚡ Conceitos Principais
-
-1. **Listas** → coleções **ordenadas e mutáveis** de itens.
-
-   * `append()` → adiciona um item no final.
-   * `remove()` → remove um item específico.
-   * `len()` → retorna o tamanho da lista.
-   * Indexação → acessar itens por posição: `lista[0]`.
-
-2. **Tuplas** → coleções **ordenadas e imutáveis** de itens.
-
-   * Indexação → acessar itens por posição: `tupla[0]`.
-   * `len()` → retorna o tamanho da tupla.
-
-3. **Dicionários** → coleções **não ordenadas de pares chave-valor**.
-
-   * Acesso → `dicionario[chave]`.
-   * Atualizar → `dicionario[chave] = valor`.
-   * Adicionar → `dicionario[nova_chave] = valor`.
-   * Métodos úteis → `keys()`, `values()`.
-
-4. **Conjuntos (Sets)** → coleções **não ordenadas de itens únicos**.
-
-   * `add()` → adiciona item.
-   * `remove()` → remove item.
-   * Operadores de associação → `in`, `not in`.
-   * `len()` → retorna o tamanho do conjunto.
-
----
-
-### 💡 Exemplos Práticos
-
-```python
-# Listas
-frutas = ["maçã", "banana", "laranja"]
-frutas.append("uva")
-frutas.remove("banana")
-print(frutas)
-print(frutas[0], len(frutas))
-
-# Tuplas
-coordenadas = (10.0, 20.0)
-print(coordenadas, coordenadas[0], len(coordenadas))
-
-# Dicionários
-pessoa = {"nome": "Alice", "idade": 30, "cidade": "São Paulo"}
-pessoa["idade"] = 31
-pessoa["profissão"] = "Engenheira"
-print(pessoa, list(pessoa.keys()), list(pessoa.values()))
-
-# Conjuntos
-numeros = {1,2,3,4,5}
-numeros.add(6)
-numeros.remove(3)
-print(numeros, 4 in numeros, len(numeros))
-
-# Exercício prático – Lista de frutas do usuário
-frutas_usuario = []
-while True:
-    fruta = input("Digite o nome de uma fruta (ou 'sair' para terminar): ")
-    if fruta.lower() == "sair":
-        break
-    frutas_usuario.append(fruta)
-print("Frutas inseridas:", frutas_usuario)
-
-# Exercício prático – Atualizar ano de um livro
-livro = {"título": "1984", "autor": "George Orwell", "ano": 1949}
-novo_ano = int(input("Digite o novo ano de publicação: "))
-livro["ano"] = novo_ano
-print("Informações atualizadas:", livro)
-```
-
----
-
-### 🧵 Resumo da Aula
-
-* **Listas** → úteis para coleções **mutáveis** e ordenadas de itens.
-* **Tuplas** → ideais quando os dados **não devem ser alterados**.
-* **Dicionários** → perfeitos para **armazenar informações relacionadas por chave**.
-* **Conjuntos** → ótimos para garantir **itens únicos** e realizar operações de associação.
-* Exercícios práticos ajudam a **interagir com dados**, atualizar informações e consolidar o aprendizado.
-
----
-
-# 📚 Aula 06 – Funções em Python
-
-**Data:** *14/08/2025*
-
-### 🧠 Objetivo
-
-Aprender a **criar e utilizar funções**, explorando parâmetros, retorno de valores, funções anônimas (lambda), recursividade, funções decoradoras e de ordem superior. Com isso, podemos **organizar melhor o código, torná-lo reutilizável e mais legível**.
-
-### ⚡ Conceitos Principais
-
-* **Funções** → blocos de código reutilizáveis que realizam uma tarefa específica.
-* **Parâmetros e retorno** → funções podem receber entradas e retornar valores.
-* **Funções padrão** → parâmetros com valores padrão.
-* **Funções matemáticas básicas** → `soma()`, `subtracao()`, `multiplicacao()`, `divisao()`.
-* **Manipulação de listas** → `media()`, `maximo()`, `minimo()`.
-* **Funções com passo opcional** → exemplo: `contador()`.
-* **Funções lambda** → funções anônimas para operações simples.
-* **Funções recursivas** → chamam a si mesmas (`fatorial()`, `fibonacci()`).
-* **Funções decoradoras** → modificam o comportamento de outras funções.
-* **Funções aninhadas e de ordem superior** → retornam funções ou recebem funções como argumento.
-* **Funções práticas** → soma de números pares, inverter string, verificar número primo.
-
----
-
-### 💡 Exemplos Práticos
-
-```python
-# Função simples com parâmetro padrão
-def saudacao(nome="Visitante"):
-    print(f"Olá, {nome}! Bem-vindo(a) à aula de funções.")
-
-saudacao()               # Olá, Visitante!
-saudacao("Maria")        # Olá, Maria!
-
-# Funções matemáticas
-print(soma(5, 3))        # 8
-print(divisao(10, 2))    # 5.0
-
-# Funções de listas
-print(media([1,2,3]))    # 2.0
-print(maximo([1,2,3]))   # 3
-print(minimo([1,2,3]))   # 1
-
-# Funções com passo opcional
-contador(1, 5)           # 1 2 3 4 5
-contador(1, 10, 2)       # 1 3 5 7 9
-
-# Funções lambda
-soma_lambda = lambda x, y: x + y
-par_lambda = lambda x: x % 2 == 0
-print(soma_lambda(10, 20))  # 30
-print(par_lambda(8))         # True
-
-# Funções recursivas
-print(fatorial(5))        # 120
-print(fibonacci(6))       # 8
-
-# Funções decoradoras
-@decorador
-def saudacao_decorada(nome):
-    print(f"Olá, {nome}! Esta é uma função decorada.")
-
-saudacao_decorada("João")
-
-# Funções aninhadas e de ordem superior
-multiplicar_por_3 = funcao_externa(3)
-print(multiplicar_por_3(10))          # 30
-print(aplicar_funcao(lambda x: x**2, [1,2,3,4]))  # [1,4,9,16]
-
-# Exercícios práticos
-print(soma_pares([1,2,3,4,5,6]))      # 12
-print(inverter_string("Python"))      # "nohtyP"
-print(eh_primo(11))                   # True
-print(eh_primo(15))                   # False
-```
-
----
-
-### 🧵 Resumo da Aula
-
-* Funções permitem **organizar o código e reutilizá-lo**, aumentando legibilidade e eficiência.
-* Parâmetros podem ser **opcionais**, com valores padrão.
-* **Lambda**, **recursão**, **decoradores** e **funções de ordem superior** são recursos avançados para manipulação flexível de funções.
-* Exercícios práticos consolidam a lógica e aplicabilidade das funções em Python.
-* Sempre **documente suas funções** com docstrings para melhorar entendimento e manutenção.
-
----
-
+### ✅ Status Geral
+
+* As **6 primeiras aulas estão concluídas** e organizadas.
+* Novas aulas ainda serão adicionadas, mantendo o repositório como **curso em andamento**.
+* Portfólio vivo com **códigos, exercícios e projetos práticos**.
